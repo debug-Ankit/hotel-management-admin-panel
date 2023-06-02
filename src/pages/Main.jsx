@@ -20,7 +20,7 @@ import UserBox from '../components/shared/UserBox';
 // import Dashboard from '../components/tabs/Dashboard';
 import MyProfile from '../components/tabs/MyProfile';
 // import Orders from '../components/tabs/Orders';
-// import Rooms from '../components/tabs/Rooms';
+import Rooms from '../components/tabs/Rooms';
 import Users from '../components/tabs/Users';
 import useFullScreen from '../hooks/useFullScreen';
 import ApiService from '../utils/apiService';
@@ -227,7 +227,7 @@ function Main() {
         <Content className='bg-bg-white overflow-y-scroll m-2 p-2'>
           {selectedKeys === '1' && (<div>Dashboard</div>)}
           {selectedKeys === '2' && (<Users />)}
-          {selectedKeys === '3' && (<div>Hotel Rooms</div>)}
+          {selectedKeys === '3' && (<Rooms />)}
           {selectedKeys === '4' && (<div>Booking Orders</div>)}
           {selectedKeys === '5' && (<MyProfile />)}
         </Content>
