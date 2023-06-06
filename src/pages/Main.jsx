@@ -17,9 +17,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Logo from '../assets/images/logo.svg';
 import UserBox from '../components/shared/UserBox';
-// import Dashboard from '../components/tabs/Dashboard';
 import MyProfile from '../components/tabs/MyProfile';
-// import Orders from '../components/tabs/Orders';
+import Orders from '../components/tabs/Orders';
 import Rooms from '../components/tabs/Rooms';
 import Users from '../components/tabs/Users';
 import useFullScreen from '../hooks/useFullScreen';
@@ -228,7 +227,7 @@ function Main() {
           {selectedKeys === '1' && (<div>Dashboard</div>)}
           {selectedKeys === '2' && (<Users />)}
           {selectedKeys === '3' && (<Rooms />)}
-          {selectedKeys === '4' && (<div>Booking Orders</div>)}
+          {selectedKeys === '4' && (<Orders/>)}
           {selectedKeys === '5' && (<MyProfile />)}
         </Content>
 
